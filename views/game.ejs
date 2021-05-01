@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .players{
+            padding:0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: space-around;
+        }
+        .box{
+            border: 1px solid black;
+            border-radius: 30px;
+            height: 50px;
+            line-height: 50px;
+            width: 100px;
+            text-align: center;
+        }
+        #container{
+            margin: 0 auto;
+            width: 50vw;
+        }
+        .ready-1{
+            background-color:red ;
+        }
+        .ready-2{
+            background-color: #58c2ff ;
+        }
+        .ready-3{
+            background-color:#008000;
+        }
+        .ready-4{
+            background-color: #ffff00;
+        }
+        .big-pawns{
+            border: 1px solid black; 
+            padding: 3vh 1.5vw; 
+            border-radius: 40px;
+        }
+        .small-pawns{
+            border: 1px solid black; 
+            padding: 2.1vh 1.05vw; 
+            border-radius: 40px;
+        }
+        .hide{
+            display: none;
+        }
+        .test{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <ul class="players">
+            <li><div class="box player-1"></div></li>
+            <li><div class="box player-2"></div></li>
+            <li><div class="box player-3"></div></li>
+            <li><div class="box player-4"></div></li>
+        </ul>
+  
+    <div style="text-align: center;">
+        Jestem gotowy
+    <input type="checkbox" name="ready" id="">
+    </div>
+    </div>
+     
+    <div style="margin:0 auto; width: 45vw; position: relative;">
+        <!-- pokoje -->
+        <div id="r1" class="p1 big-pawns" style="position: absolute; top:5vh;left:2.6vw; "></div>
+        <div id="r2" class="p2 big-pawns" style="position: absolute; top:5vh;left:8.5vw; "></div>
+        <div id="r3" class="p3 big-pawns" style="position: absolute; top:15.5vh;left:2.6vw; "></div>
+        <div id="r4" class="p4 big-pawns" style="position: absolute; top:15.5vh;left:8.5vw; "></div>
+        
+        <div id="b1" class="p5 big-pawns" style="position: absolute; top:5vh;left:32.3vw; "></div>
+        <div id="b2" class="p6 big-pawns" style="position: absolute; top:5vh;left:38.2vw; "></div>
+        <div id="b3" class="p7 big-pawns" style="position: absolute; top:15.5vh;left:32.3vw; "></div>
+        <div id="b4" class="p8 big-pawns" style="position: absolute; top:15.5vh;left:38.2vw; "></div>
+         
+        <div id="y1" class="p9 big-pawns" style="position: absolute; top:65vh;left:3.2vw; "></div>
+        <div id="y2" class="p10 big-pawns" style="position: absolute; top:65vh;left:9.1vw; "></div>
+        <div id="y3" class="p11 big-pawns" style="position: absolute; top:75.5vh;left:3.2vw; "></div>
+        <div id="y4" class="p12 big-pawns" style="position: absolute; top:75.5vh;left:9.1vw; "></div>
+        
+        <div id="g1" class="p13 big-pawns" style="position: absolute; top:65vh;left:32.3vw; "></div>
+        <div id="g2" class="p14 big-pawns" style="position: absolute; top:65vh;left:38.2vw; "></div>
+        <div id="g3" class="p15 big-pawns" style="position: absolute; top:75.5vh;left:32.3vw; "></div>
+        <div id="g4" class="p16 big-pawns" style="position: absolute; top:75.5vh;left:38.2vw; "> </div>
+        <!-- Od niebieskiego -->
+        <div class="p17 small-pawns" style="position: absolute; top:2.2vh;left:25.2vw; "></div>
+        <div class="p18 small-pawns" style="position: absolute; top:10.5vh;left:25.2vw; "></div>
+        <div class="p19 small-pawns" style="position: absolute; top:18.6vh;left:25.2vw; "></div>
+        <div class="p20 small-pawns" style="position: absolute; top:26.8vh;left:25.2vw; "></div>
+        <div class="p21 small-pawns" style="position: absolute; top:35vh;left:25.2vw; "></div>
+
+        <div class="p22 small-pawns" style="position: absolute; top:35vh;left:29.3vw; "></div>        
+        <div class="p23 small-pawns" style="position: absolute; top:35vh;left:33.4vw; "></div>        
+        <div class="p24 small-pawns" style="position: absolute; top:35vh;left:37.5vw; "></div>        
+        <div class="p25 small-pawns" style="position: absolute; top:35vh;left:41.6vw; "></div>     
+        
+        <div class="p26 small-pawns" style="position: absolute; top:42.5vh;left:41.6vw; "></div>
+        <div class="p27 small-pawns" style="position: absolute; top:50vh;left:41.6vw; "></div>
+
+        <div class="p28 small-pawns" style="position: absolute; top:49.8vh;left:37.5vw; "></div>        
+        <div class="p29 small-pawns" style="position: absolute; top:49.8vh;left:33.4vw; "></div>   
+        <div class="p30 small-pawns" style="position: absolute; top:49.8vh;left:29.3vw; "></div>   
+        <div class="p31 small-pawns" style="position: absolute; top:49.9vh;left:25.3vw; "></div>   
+
+        <div class="p32 small-pawns" style="position: absolute; top:58vh;left:25.3vw; "></div>
+        <div class="p33 small-pawns" style="position: absolute; top:66.3vh;left:25.3vw; "></div>
+        <div class="p34 small-pawns" style="position: absolute; top:74.3vh;left:25.3vw; "></div>
+        <div class="p35 small-pawns" style="position: absolute; top:82.5vh;left:25.3vw; "></div>
+
+        <div class="p36 small-pawns" style="position: absolute; top:82.5vh;left:21.6vw; "></div>
+        <div class="p37 small-pawns" style="position: absolute; top:82.5vh;left:17.8vw; "></div>
+        
+        <div class="p38 small-pawns" style="position: absolute; top:74.45vh;left:17.8vw; "></div>
+        <div class="p39 small-pawns" style="position: absolute; top:66.3vh;left:17.8vw; "></div>
+        <div class="p40 small-pawns" style="position: absolute; top:58.1vh;left:17.8vw; "></div>
+        <div class="p41 small-pawns" style="position: absolute; top:49.9vh;left:17.8vw; "></div>
+        
+        <div class="p42 small-pawns" style="position: absolute; top:49.9vh;left:13.7vw; "></div>
+        <div class="p43 small-pawns" style="position: absolute; top:49.9vh;left:9.6vw; "></div>
+        <div class="p44 small-pawns" style="position: absolute; top:49.9vh;left:5.5vw; "></div>
+        <div class="p45 small-pawns" style="position: absolute; top:49.9vh;left:1.3vw; "></div>
+        
+        <div class="p46 small-pawns" style="position: absolute; top:49.9vh;left:1.3vw; "></div>
+        <div class="p47 small-pawns" style="position: absolute; top:42.5vh;left:1.3vw; "></div>
+        <div class="p48 small-pawns" style="position: absolute; top:35vh;left:1.3vw; "></div>
+        
+        <div class="p49 small-pawns" style="position: absolute; top:35vh;left:5.4vw; "></div>
+        <div class="p50 small-pawns" style="position: absolute; top:35vh;left:9.5vw; "></div>
+        <div class="p51 small-pawns" style="position: absolute; top:35vh;left:13.7vw; "></div>
+        <div class="p52 small-pawns" style="position: absolute; top:35vh;left:17.8vw; "></div>
+        
+        <div class="p53 small-pawns" style="position: absolute; top:26.7vh;left:17.6vw; "></div>
+        <div class="p54 small-pawns" style="position: absolute; top:18.5vh;left:17.6vw; "></div>
+        <div class="p55 small-pawns" style="position: absolute; top:10.3vh;left:17.6vw; "></div>
+        <div class="p56 small-pawns" style="position: absolute; top:2.1vh;left:17.6vw; "></div>
+        <div class="p57 small-pawns" style="position: absolute; top:2.1vh;left:21.4vw; "></div>
+
+        
+        <img src="/static/img/plansza.svg"  alt="">
+    </div>
+    <div style=" display:flex; flex-direction:column ; align-items: center;  position:absolute; top:10vh; left: 80vw;">
+        <div class="dice" style="border: 1px solid black; border-radius: 15px;"><img src="/static/img/1.png" alt=""></div>
+        <button class="dice-throw hide">Losuj</button>
+        <div class ="timer">1</div>
+    </div>
+    
+
+    <div class="id" style="display: none;"><%= id %></div>
+
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

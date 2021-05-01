@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="nickname">
+        <button type="submit">Dołącz do pokoju</button>
+    </form>
+
+    <script>
+        const btn = document.querySelector("button")
+        btn.addEventListener("click", function(e){
+            e.preventDefault()
+            fetch("/addToRoom",{
+                headers: {'Content-Type': 'application/json'},
+                method:"POST",
+                body:JSON.stringify({nickname:document.querySelector("input").value})
+            })
+            .then(res => location.href = "/game")
+            .catch(err => console.error(err))
+        })
+    </script>
+</body>
+</html>
